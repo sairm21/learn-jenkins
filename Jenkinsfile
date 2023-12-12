@@ -10,7 +10,7 @@ pipeline {
     }
 
     parameters {
-            string(app_name: 'name', defaultValue: 'roboshop', description: 'enter application name')
+            string(name: 'app_name', defaultValue: 'roboshop', description: 'enter application name')
             }
 
 
