@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { node { label 'Workstation' } }
 
     stages {
         stage('stage-1') {
@@ -8,4 +8,9 @@ pipeline {
             }
         }
     }
+    post {
+            always {
+                echo 'post section'
+            }
+        }
 }
