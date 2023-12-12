@@ -11,10 +11,8 @@ pipeline {
                     }
             steps {
                 sh 'whoami'
+                sh 'printenv'
             }
-            steps {
-                            sh 'printenv'
-                        }
         }
     }
     post {
