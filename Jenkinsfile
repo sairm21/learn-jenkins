@@ -19,6 +19,11 @@ pipeline {
 
     stages {
         stage('stage-1') {
+
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+                }
         environment {
                         creds = credentials('Workstation')
                     }
