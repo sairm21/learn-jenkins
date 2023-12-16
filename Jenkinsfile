@@ -9,9 +9,11 @@ pipeline {
         ansiColor('xterm')
     }
 
+/*
     parameters {
             string(name: 'app_name', defaultValue: 'roboshop', description: 'enter application name')
             }
+ */
 
     triggers { pollSCM('H/2 * * * *') }
 
