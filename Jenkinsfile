@@ -25,6 +25,7 @@ pipeline {
             steps {
                 sh 'whoami'
                 sh 'printenv'
+                echo 'pollSCM testing'
             }
         }
     }
