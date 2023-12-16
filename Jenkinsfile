@@ -33,6 +33,15 @@ pipeline {
                 echo 'pollSCM testing'
             }
         }
+
+        stage('Example Deploy') {
+            when {
+                branch 'main'
+            }
+            steps {
+                echo 'testing when condition'
+            }
+        }
     }
 
     post {
