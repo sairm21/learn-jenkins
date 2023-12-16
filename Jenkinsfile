@@ -36,7 +36,7 @@ pipeline {
 
         stage('Example Deploy') {
             when {
-                branch 'main'
+                branch 'prod'
             }
             steps {
                 echo 'testing when condition'
